@@ -28,3 +28,11 @@
    padding: 0.4rem;
    border-radius: 5px;
 }
+
+.button-style{
+   border: none;
+   background-color: var(--color-button);
+   padding: 0.5rem;
+   border-radius: 5px;
+   color: var(--color-text);
+}

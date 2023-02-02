@@ -8,8 +8,10 @@ export const AddPost = () => {
    const { user } = useContext(UserContext);
 
    const [values, setValues] = useState({
-      title: null,
-      thumbnailUrl: null,
+      title: "",
+      thumbnailUrl: "",
+      price: "",
+      location: "",
 
    })
 
@@ -22,16 +24,32 @@ export const AddPost = () => {
       })
    }
 
-   return (
-      <section id="new-post">
-         <PostBody data={{...values, ownerName: user.email}} />
+   const handleSubmit = () =>{
+      e.preventDefault();
 
-         <form className='post-form'>
-            <p>Title</p>
-            <input name="title" onChange={handleChange} value={values.title} type="text" className="input-style" />
-            <p>Thumbnail Url</p>
-            <input name="thumbnailUrl" onChange={handleChange} value={values.thumbnailUrl} type="text" className="input-style" />
-         </form>
+      
+   }
+
+   return (
+      <>
+      {user &&
+      <section id="new-post">
+            <PostBody data={{...values, ownerName: user.name, ownerAvatarUrl: user.avatarUrl}} />
+
+            <form className='post-form' onSubmit={handleSubmit}>
+               <p>Title</p>
+               <input name="title" onChange={handleChange} value={values.title} type="text" className="input-style" required />
+               <p>Thumbnail Url</p>
+               <input name="thumbnailUrl" onChange={handleChange} value={values.thumbnailUrl} type="text" className="input-style" required />
+               <p>Price</p>
+               <input name="price" onChange={handleChange} value={values.price} type="text" className="input-style" required />
+               <p>Location</p>
+               <input name="location" onChange={handleChange} value={values.location} type="text" className="input-style" required />
+
+               <input className="button-style" type="submit" value="Post" />
+            </form>
       </section>
+      }
+      </>
    )
 }

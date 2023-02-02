@@ -12,6 +12,8 @@ export const UserProvider = ({ children }) => {
       setUser({
          userId: userObject.id,
          email: userObject.email,
+         avatarUrl: userObject.avatarUrl,
+         name: userObject.name,
          rank: userObject.rank
       })
    }
