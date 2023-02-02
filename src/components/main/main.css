@@ -22,6 +22,14 @@ nav a{
    text-decoration: none;
 }
 
+footer{
+   background-color: var(--color-primary-shade);
+   height: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 section{
    flex: 1;
 }

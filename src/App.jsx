@@ -6,6 +6,7 @@ import { Login } from './components/authentication/Login';
 import { UserProvider } from './contexts/UserProvider';
 import { Home } from './components/main/home/Home';
 import { Register } from './components/authentication/Register';
+import { Footer } from './components/main/Footer';
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
                <Route path='/register' element={<Register />} />
             </Route>
          </Routes>
+
+         <Footer />
       </UserProvider>
 
    )
