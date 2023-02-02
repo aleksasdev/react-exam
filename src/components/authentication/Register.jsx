@@ -3,7 +3,7 @@ import { ValidationForm, ValidInput, MINIMUM_LENGTH_8 } from '@aleksasdev/valida
 import { HAVE_VALID_EMAIL } from '@aleksasdev/validation-form';
 import { HAVE_VALID_URL } from '@aleksasdev/validation-form';
 import { Fetcher } from '@aleksasdev/json-api';
-import { DATABASE_URL, USERS_ROUTE } from './../../constants/general';
+import { DATABASE_URL, USERS_ROUTE } from '@/constants/general';
 import { nanoid } from 'nanoid';
 import { useNavigate } from 'react-router-dom';
 

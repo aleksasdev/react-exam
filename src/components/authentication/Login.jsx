@@ -1,12 +1,11 @@
-import { MINIMUM_AGE_13 } from '@aleksasdev/validation-form'
 import { MINIMUM_LENGTH_8 } from '@aleksasdev/validation-form'
 import { HAVE_VALID_EMAIL } from '@aleksasdev/validation-form'
 import { ValidationForm, ValidInput } from '@aleksasdev/validation-form'
 import React, { useContext, useState } from 'react'
 import { RememberMe } from './RememberMe';
 import { Fetcher } from '@aleksasdev/json-api';
-import { DATABASE_URL, USERS_ROUTE } from './../../constants/general';
-import { UserContext } from './../../contexts/UserProvider';
+import { DATABASE_URL, USERS_ROUTE } from '@/constants/general';
+import { UserContext } from '@/contexts/UserProvider';
 import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
