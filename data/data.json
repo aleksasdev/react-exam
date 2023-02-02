@@ -9,5 +9,14 @@
       "rank": "user"
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "title": "dsfsdfsdf",
+      "thumbnailUrl": "https://dragonball.guru/wp-content/uploads/2021/01/goku-dragon-ball-guru.jpg",
+      "price": "14",
+      "location": "Test",
+      "description": "sdfsdf sdf sdfsdfdsf",
+      "id": "D04c2WW9ZrNO3UfDWQa3O"
+    }
+  ]
 }

@@ -9,23 +9,26 @@ import { Register } from './components/authentication/Register';
 import { Footer } from './components/main/Footer';
 import { Logout } from './components/authentication/Logout';
 import { AddPost } from './components/posts/AddPost';
+import { PostsProvider } from './contexts/PostsProvider';
 
 function App() {
 
    return (
 
       <UserProvider>
-         <Routes>
-            <Route element={<Navbar />}>
-               <Route path='/' element={<Home />} />
-               <Route path='/logout' element={<Logout />} />
-               <Route path='/login' element={<Login />} />
-               <Route path='/register' element={<Register />} />
-               <Route path='/add-post' element={<AddPost />} />
-            </Route>
-         </Routes>
+         <PostsProvider>
+            <Routes>
+               <Route element={<Navbar />}>
+                  <Route path='/' element={<Home />} />
+                  <Route path='/logout' element={<Logout />} />
+                  <Route path='/login' element={<Login />} />
+                  <Route path='/register' element={<Register />} />
+                  <Route path='/add-post' element={<AddPost />} />
+               </Route>
+            </Routes>
 
-         <Footer />
+            <Footer />
+         </PostsProvider>
       </UserProvider>
 
    )
