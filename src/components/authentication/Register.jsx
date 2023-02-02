@@ -12,7 +12,7 @@ export const Register = () => {
    const navigator = useNavigate();
 
    const handleRegistration = async (values) =>{
-      const [email, password, repeatPassword, avatarUrl] = values;
+      const [email, name, password, repeatPassword, avatarUrl] = values;
 
       const allUsers = await new Fetcher(DATABASE_URL+USERS_ROUTE).get();
       const isEmailAlreadyTaken = Array.isArray(allUsers) && allUsers.find(user => user.email === email);
@@ -31,6 +31,7 @@ export const Register = () => {
          id: nanoid(),
          email,
          password,
+         name,
          avatarUrl,
          rank: "user"
       })
@@ -43,6 +44,8 @@ export const Register = () => {
          <ValidationForm onCompleted={handleRegistration} label="Register" >
             <p>Email</p>
             <ValidInput name="email" requirements={[HAVE_VALID_EMAIL]} />
+            <p>Name</p>
+            <ValidInput name="name" required />
             <p>Password</p>
             <ValidInput name="password" requirements={[MINIMUM_LENGTH_8]} />
             <p>Repeat Password</p>

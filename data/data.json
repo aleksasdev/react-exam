@@ -1,14 +1,13 @@
 {
   "users": [
     {
-      "id": "oCKq9uR5TawAIMZ0ot5U1",
-      "email": "2@gmail.com",
-      "password": "ffffffffffff",
-      "avatarUrl": "sdfdsfsds.comwww",
+      "id": "f3j68NpCZwSrNYwCNMRwk",
+      "email": "lol@gmail.com",
+      "password": "superpassword",
+      "name": "Lolman",
+      "avatarUrl": "https://i1.sndcdn.com/avatars-000737077780-co96jx-t500x500.jpg",
       "rank": "user"
     }
   ],
-  "posts": [
-   
-  ]
+  "posts": []
 }
