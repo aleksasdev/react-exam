@@ -4,6 +4,11 @@
    height: 100vh;
 }
 
+html{
+   text-align: center;
+   font-size: 15px;
+}
+
 nav{
    display: flex;
    width: 100%;
@@ -19,4 +24,10 @@ nav a{
 
 section{
    flex: 1;
+}
+
+@media (min-width: 700px){
+   html{
+      font-size: 16px;
+   }
 }
