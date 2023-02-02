@@ -11,11 +11,13 @@ export const Login = () => {
    }
     
    return (
-      <ValidationForm onCompleted={handleLogin} label="Login">
-         <p>Email</p>
-         <ValidInput name="email" requirements={[HAVE_VALID_EMAIL]} />
-         <p>Password</p>
-         <ValidInput name="password" requirements={[MINIMUM_LENGTH_8]} />
-      </ValidationForm>
+      <section id="login">
+         <ValidationForm onCompleted={handleLogin} label="Login">
+            <p>Email</p>
+            <ValidInput name="email" requirements={[HAVE_VALID_EMAIL]} />
+            <p>Password</p>
+            <ValidInput name="password" requirements={[MINIMUM_LENGTH_8]} />
+         </ValidationForm>
+      </section>
    )
 }

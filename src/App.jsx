@@ -5,22 +5,22 @@ import { Navbar } from './components/main/Navbar'
 import { Login } from './components/authentication/Login';
 import { UserProvider } from './contexts/UserProvider';
 import { Home } from './components/main/home/Home';
+import { Register } from './components/authentication/Register';
 
 function App() {
 
    return (
-      <div className="App">
 
-         <UserProvider>
-            <Routes>
-               <Route element={<Navbar />}>
-                  <Route path='/' element={<Home />} />
-                  <Route path='/login' element={<Login />} />
-               </Route>
-            </Routes>
-         </UserProvider>
+      <UserProvider>
+         <Routes>
+            <Route element={<Navbar />}>
+               <Route path='/' element={<Home />} />
+               <Route path='/login' element={<Login />} />
+               <Route path='/register' element={<Register />} />
+            </Route>
+         </Routes>
+      </UserProvider>
 
-      </div>
    )
 }
 

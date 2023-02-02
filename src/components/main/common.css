@@ -1,4 +1,15 @@
+@import url('./main.css');
+
 *{
    margin: 0;
+   padding: 0;
    box-sizing: border-box;
+}
+
+:root{
+   --color-primary: #282b30;
+   --color-primary-tint: #424549;
+   
+   --color-button: #5865f2;
+   --color-button-shade: #4752c4;
 }
