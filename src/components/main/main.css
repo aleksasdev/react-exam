@@ -39,15 +39,8 @@ section{
    flex: 1;
 }
 
-.validation-form .error-widget{
-   font-size: 15px;
-}
-
 @media (min-width: 700px){
    html{
       font-size: 18px;
-   }
-   .validation-form .error-widget{
-      font-size: 1rem;
    }
 }

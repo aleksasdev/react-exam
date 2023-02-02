@@ -20,3 +20,11 @@
    --color-text: white;
    --color-text-shade: #dcdbde;
 }
+
+.input-style{
+   background-color: var(--color-primary-tint);
+   border: none;
+   outline: none;
+   padding: 0.4rem;
+   border-radius: 5px;
+}

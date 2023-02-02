@@ -1,0 +1,22 @@
+#new-post{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+   padding: 2rem;
+}
+
+.post{
+   background-color: var(--color-primary-tint);
+   display: grid;
+   padding: 1rem;
+   width: 100%;
+}
+.post .title{
+
+}
+.post .thumbnail{
+   width: auto;
+   height: 9rem;
+   object-fit: cover;
+}
