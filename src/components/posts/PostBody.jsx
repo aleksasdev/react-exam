@@ -11,14 +11,14 @@ export const PostBody = ({ data }) => {
          <span className="owner-span">
             <img className="owner-avatar" src={ownerAvatarUrl} alt="avatar" />
             <p className='owner-name'>{ownerName}</p>
-            <p className='owner-email'>{ownerEmail}✉️</p>
+            <p className='owner-email'>{ownerEmail}</p>
          </span>
 
          <span className="title-span">
             <p className='title'>Title: {title}📕</p>
             <p className='price'>Price: {price}💲</p>
          </span>
-         <img className="thumbnail" src={thumbnailUrl} alt="thumbnail" />
+         <img className="thumbnail" src={thumbnailUrl} alt="*Your thumbnail goes here*" />
 
          <div className="description-container">
             <p>{description}</p>
