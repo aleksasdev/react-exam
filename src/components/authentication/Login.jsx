@@ -50,7 +50,7 @@ export const Login = () => {
             <p>Email</p>
             <ValidInput name="email" requirements={[HAVE_VALID_EMAIL]} />
             <p>Password</p>
-            <ValidInput name="password" requirements={[MINIMUM_LENGTH_8]} />
+            <ValidInput name="password" type="password" requirements={[MINIMUM_LENGTH_8]} />
 
             <RememberMe setShouldRememberMe={setShouldRememberMe} />
          </ValidationForm>
