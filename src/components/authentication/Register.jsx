@@ -31,7 +31,8 @@ export const Register = () => {
          id: nanoid(),
          email,
          password,
-         avatarUrl
+         avatarUrl,
+         rank: "user"
       })
 
       navigator("/login");

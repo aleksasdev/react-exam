@@ -1,16 +1,11 @@
 {
   "users": [
     {
-      "email": "ff@gmail.com",
-      "password": "sdfdsfsds",
-      "avatarUrl": "sdfdsfsds.comwww",
-      "id": 1
-    },
-    {
-      "id": "0MxfBB3R9NZ7HrNnnBgP8",
-      "email": "lol@gmail.com",
+      "id": "oCKq9uR5TawAIMZ0ot5U1",
+      "email": "2@gmail.com",
       "password": "ffffffffffff",
-      "avatarUrl": "sdfdsfsds.comwww"
+      "avatarUrl": "sdfdsfsds.comwww",
+      "rank": "user"
     }
   ]
 }
