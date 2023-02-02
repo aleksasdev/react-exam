@@ -3,23 +3,25 @@ import { UserContext } from '@/contexts/UserProvider';
 
 export const Post = ({ data }) => {
 
-   const { user } = useContext(UserContext);
    const { title, location, price, thumbnailUrl,
-      description
-   } = data;
+      description, ownerEmail, ownerName, ownerAvatarUrl } = data;
 
 
    return (
       <div className="post">
          <span className="owner-span">
-            <img className="owner-avatar" src={user.avatarUrl} alt="avatar" />
-            <p className='owner-name'>{user.name}</p>
-            <p className='owner-email'>{user.email}</p>
+            <img className="owner-avatar" src={ownerAvatarUrl} alt="avatar" />
+            <p className='owner-name'>{ownerName}</p>
+            <p className='owner-email'>{ownerEmail}</p>
+         </span>
+
+         <span className='price-span'>
+            <p>💰</p>
+            <h3 className='price'>{price}$</h3>
          </span>
 
          <span className="title-span">
-            <p className='title'>Title: {title}📕</p>
-            <p className='price'>Price: {price}💲</p>
+            <h1 className='title'>{title ? title : "TITLE"}</h1>
          </span>
 
          {thumbnailUrl

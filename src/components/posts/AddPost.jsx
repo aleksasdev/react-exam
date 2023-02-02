@@ -40,7 +40,12 @@ export const AddPost = () => {
       <>
       {user &&
       <section id="new-post">
-         <Post data={values} />
+         <Post data={{
+            ...values,
+            ownerName: user.name,
+            ownerEmail: user.email,
+            ownerAvatarUrl: user.avatarUrl
+         }} />
 
          <form className='post-form' onSubmit={handleSubmit}>
             <p>Title</p>

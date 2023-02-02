@@ -28,7 +28,7 @@
    display: grid;
    padding: 1rem;
    width: 100%;
-   grid-template: max-content 1fr / 4rem 1fr;
+   grid-template: max-content 1fr / 1fr 1fr;
    gap: 1rem;
 }
 .post p{
@@ -55,13 +55,14 @@
 }
 .post .owner-name{
    color: white;
+   margin-top: 0.5rem;
 }
 .post .owner-email{
    word-break: keep-all;
 }
 .post .owner-avatar{
-   width: 100%;
-   height: auto;
+   width: 4rem;
+   height: 4rem;
    object-fit: cover;
    border-radius: 50%;
 }
@@ -70,6 +71,14 @@
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   grid-column: span 2;
+}
+
+.post .price-span{
+   display: flex;
+   justify-content: flex-end;
+   height: max-content;
+   align-items: center;
 }
 
 .post .description-container{
