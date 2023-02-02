@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/main/Navbar'
 import { Login } from './components/authentication/Login';
 import { UserProvider } from './contexts/UserProvider';
+import { Home } from './components/main/home/Home';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
          <UserProvider>
             <Routes>
                <Route element={<Navbar />}>
-                  <Route path='/' element={<Login />} />
+                  <Route path='/' element={<Home />} />
                   <Route path='/login' element={<Login />} />
                </Route>
             </Routes>
