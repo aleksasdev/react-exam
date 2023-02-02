@@ -6,6 +6,7 @@ export const PostBody = ({ data }) => {
       description, ownerName, ownerEmail, ownerAvatarUrl
    } = data;
 
+
    return (
       <div className="post">
          <span className="owner-span">
@@ -18,7 +19,13 @@ export const PostBody = ({ data }) => {
             <p className='title'>Title: {title}📕</p>
             <p className='price'>Price: {price}💲</p>
          </span>
-         <img className="thumbnail" src={thumbnailUrl} alt="*Your thumbnail goes here*" />
+
+         {thumbnailUrl
+         ?
+            <img className="thumbnail" src={thumbnailUrl} alt="thumbnail" />
+         :
+            <p className='thumbnail-alt'>*Your thumbnail goes here*</p>
+         }
 
          <div className="description-container">
             <p>{description}</p>

@@ -44,6 +44,9 @@
    object-fit: cover;
    grid-column: span 2;
 }
+.post .thumbnail-alt{
+   grid-column: span 2;
+}
 
 .post .owner-span{
    display: flex;
