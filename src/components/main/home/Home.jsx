@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
-import { UserContext } from './../../../contexts/UserProvider';
+import { UserContext } from '@/contexts/UserProvider';
+import { RenderPosts } from '@/components/posts/RenderPosts';
+import './home.css'
 
 export const Home = () => {
 
@@ -9,7 +11,7 @@ export const Home = () => {
       <section id="home">
          {user
          ?
-            null
+            <RenderPosts />
          :
             <p>Please login.</p>
          }

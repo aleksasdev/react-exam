@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react'
 import './posts.css'
-import { PostBody } from './PostBody';
 import { UserContext } from '@/contexts/UserProvider';
 import { PostsContext } from './../../contexts/PostsProvider';
 import { useNavigate } from 'react-router-dom';
+import { Post } from './Post';
 
 export const AddPost = () => {
 
@@ -40,12 +40,7 @@ export const AddPost = () => {
       <>
       {user &&
       <section id="new-post">
-         <PostBody data={{
-            ...values, 
-            ownerName: user.name,
-            ownerEmail: user.email,
-            ownerAvatarUrl: user.avatarUrl
-         }} />
+         <Post data={values} />
 
          <form className='post-form' onSubmit={handleSubmit}>
             <p>Title</p>

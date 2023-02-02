@@ -1,18 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '@/contexts/UserProvider';
 
-export const PostBody = ({ data }) => {
+export const Post = ({ data }) => {
 
+   const { user } = useContext(UserContext);
    const { title, location, price, thumbnailUrl,
-      description, ownerName, ownerEmail, ownerAvatarUrl
+      description
    } = data;
 
 
    return (
       <div className="post">
          <span className="owner-span">
-            <img className="owner-avatar" src={ownerAvatarUrl} alt="avatar" />
-            <p className='owner-name'>{ownerName}</p>
-            <p className='owner-email'>{ownerEmail}</p>
+            <img className="owner-avatar" src={user.avatarUrl} alt="avatar" />
+            <p className='owner-name'>{user.name}</p>
+            <p className='owner-email'>{user.email}</p>
          </span>
 
          <span className="title-span">
