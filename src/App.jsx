@@ -8,6 +8,7 @@ import { Home } from './components/main/home/Home';
 import { Register } from './components/authentication/Register';
 import { Footer } from './components/main/Footer';
 import { Logout } from './components/authentication/Logout';
+import { AddPost } from './components/posts/AddPost';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
                <Route path='/logout' element={<Logout />} />
                <Route path='/login' element={<Login />} />
                <Route path='/register' element={<Register />} />
+               <Route path='/add-post' element={<AddPost />} />
             </Route>
          </Routes>
 

@@ -6,7 +6,7 @@
 
 html{
    text-align: center;
-   font-size: 15px;
+   font-size: 16px;
 }
 
 nav{
@@ -17,6 +17,10 @@ nav{
    align-items: center;
    justify-content: center;
    gap: 0.9rem;
+}
+nav .logo{
+   height: 1.2rem;
+   width: 1.2rem;
 }
 nav a{
    text-decoration: none;
@@ -35,8 +39,15 @@ section{
    flex: 1;
 }
 
+.validation-form .error-widget{
+   font-size: 15px;
+}
+
 @media (min-width: 700px){
    html{
-      font-size: 16px;
+      font-size: 18px;
+   }
+   .validation-form .error-widget{
+      font-size: 1rem;
    }
 }
