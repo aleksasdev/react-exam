@@ -14,11 +14,16 @@ export const Post = ({ data }) => {
             <p className='owner-name'>{ownerName}</p>
             <p className='owner-email'>{ownerEmail}</p>
          </span>
-
-         <span className='price-span'>
-            <p>💰</p>
-            <h3 className='price'>{price}$</h3>
-         </span>
+         
+         <div className="price-wrapper">
+            <span className='price-span'>
+               <p>💰</p>
+               <h3 className='price'>{price}$</h3>
+            </span>
+            <span className="location-span">
+               <p className="location">{location}</p>
+            </span>
+         </div>
 
          <span className="title-span">
             <h1 className='title'>{title ? title : "TITLE"}</h1>
@@ -28,7 +33,7 @@ export const Post = ({ data }) => {
          ?
             <img className="thumbnail" src={thumbnailUrl} alt="thumbnail" />
          :
-            <p className='thumbnail-alt'>*Your thumbnail goes here*</p>
+            <p className='thumbnail-alt'></p>
          }
 
          <div className="description-container">

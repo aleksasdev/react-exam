@@ -15,7 +15,7 @@ export const Navbar = () => {
             {user
             ?
                <>
-               <Link to='/add-post'>New Listing</Link>
+               <Link to='/add-post'>Add</Link>
                <Link to="/logout">Logout</Link>
                </>
             :
