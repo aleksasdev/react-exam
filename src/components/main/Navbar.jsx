@@ -11,10 +11,10 @@ export const Navbar = () => {
       <>
          <nav>
             <img src={logoSVG} alt="" className="logo" />
-            <Link to="/">Home</Link>
             {user
             ?
                <>
+               <Link to="/">Home</Link>
                <Link to='/add-post'>Add</Link>
                <Link to="/logout">Logout</Link>
                </>

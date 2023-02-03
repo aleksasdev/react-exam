@@ -26,7 +26,7 @@ export const Post = ({ data }) => {
          </div>
 
          <span className="title-span">
-            <h1 className='title'>{title ? title : "TITLE"}</h1>
+            <h1 className='title'>{title ? title : ""}</h1>
          </span>
 
          {thumbnailUrl

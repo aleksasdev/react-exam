@@ -15,6 +15,14 @@
       "name": "Mister Four Eyes",
       "avatarUrl": "https://thumbs.gfycat.com/SoftUnsightlyGrebe-size_restricted.gif",
       "rank": "user"
+    },
+    {
+      "id": "2lu6EzYBCCVmBg6VrnDyG",
+      "email": "hairexpert@gmail.com",
+      "password": "masterroshicool1",
+      "name": "Master Roshi Ultra Instinct",
+      "avatarUrl": "https://i.ytimg.com/vi/ZjlNIuB_DaI/maxresdefault.jpg",
+      "rank": "user"
     }
   ],
   "posts": [
@@ -39,6 +47,17 @@
       "ownerName": "Mister Four Eyes",
       "ownerEmail": "foureyes@gmail.com",
       "ownerAvatarUrl": "https://thumbs.gfycat.com/SoftUnsightlyGrebe-size_restricted.gif"
+    },
+    {
+      "title": "Restore Your Hair Today!",
+      "thumbnailUrl": "https://preview.redd.it/waq6mhwe2lg71.jpg?width=640&crop=smart&auto=webp&s=70556eaaac8ef0de6e512fab836324a7fd95bdc2",
+      "price": "997",
+      "location": "Earth",
+      "description": "Even though, I'm pointing to the treasure I can't possess, you can fully trust my expertise and abilities to restore your hair, let's hop on a call and talk this through!",
+      "id": "ZfjLrcBE8OZbpXlo3-RXV",
+      "ownerName": "Master Roshi Ultra Instinct",
+      "ownerEmail": "hairexpert@gmail.com",
+      "ownerAvatarUrl": "https://i.ytimg.com/vi/ZjlNIuB_DaI/maxresdefault.jpg"
     }
   ]
 }
