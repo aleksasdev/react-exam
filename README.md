@@ -1,5 +1,5 @@
 # Preview
-![image](https://user-images.githubusercontent.com/23456490/216537517-d3c81075-aa70-4a5f-b8dc-546fc9b8c55b.png)
+![image](https://user-images.githubusercontent.com/23456490/216554074-2009b52c-ba17-4460-add0-4ad210429bad.png)
 # Getting the project to launch
 - Open your favorite code editor, like ```vs code``` and ```cd``` to your directory of choice
 - Type ```git clone https://github.com/aleksasdev/react-exam.git```
