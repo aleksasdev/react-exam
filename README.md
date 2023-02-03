@@ -6,7 +6,7 @@
 - ```cd react-exam```
 # Next
 - Run ```npm i```
-- And finally run ```npm run serve```
+- And run ```npm run serve``` to start
 # Finally
 After you see this in your terminal:
 
