@@ -27,6 +27,9 @@ nav .logo{
 nav a{
    text-decoration: none;
 }
+nav a:hover{
+   color: var(--color-text);
+}
 
 footer{
    background-color: var(--color-primary-shade);
