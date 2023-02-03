@@ -29,9 +29,9 @@
    padding: 1rem;
    width: 100%;
    max-width: 22rem;
-   grid-template: repeat(3, max-content) 10rem / 1fr 1fr;
+   grid-template: repeat(4, max-content) / 1fr 1fr;
    gap: 1rem;
-   height: max-content;
+   height: 1fr;
 }
 .post p{
    word-wrap: break-word;
@@ -107,22 +107,26 @@
    width: 100%;
 }
 
-@media (min-width: 700px){
+@media (min-width: 800px){
    #new-post{
       flex-direction: row-reverse;
       align-items: flex-start;
       padding-left: 5rem;
       padding-right: 5rem;
+      justify-content: center;
+   }
+   #new-post textarea{
+      min-height: 7rem;
    }
 
    #new-post .post-form{
-      flex: 1;
       justify-content: center;
+      width: max-content;
    }
 
    #new-post .input-style{
       width: 15rem;
-      padding: 0.7rem;
+      padding: 0.6rem;
       font-size: 1.1rem;
    }
 

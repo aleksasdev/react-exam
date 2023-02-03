@@ -1,8 +1,14 @@
 #home{
    padding: 1rem;
-   display: flex;
-   flex-direction: row;
+   display: grid;
    gap: 2rem;
-   flex-wrap: wrap;
+   grid-template-columns: max-content;
+   grid-auto-rows: max-content;
    justify-content: center;
+}
+
+@media (min-width: 800px){
+   #home{
+      grid-auto-flow: column;
+   }
 }
