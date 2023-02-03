@@ -18,7 +18,7 @@
 }
 
 #new-post textarea{
-   width: 100%;
+   width: inherit;
    height: 4.5rem;
    font-size: 1rem;
 }
@@ -28,8 +28,10 @@
    display: grid;
    padding: 1rem;
    width: 100%;
-   grid-template: max-content 1fr / 1fr 1fr;
+   max-width: 22rem;
+   grid-template: repeat(3, max-content) 10rem / 1fr 1fr;
    gap: 1rem;
+   height: max-content;
 }
 .post p{
    word-wrap: break-word;
@@ -96,7 +98,6 @@
    grid-column: span 2;
    display: flex;
    width: 100%;
-   justify-content: center;
    background-color: var(--color-primary);
    padding: 0.5rem;
    text-align: left;
@@ -104,4 +105,34 @@
 .post .description-container p{
    word-wrap: break-word;
    width: 100%;
+}
+
+@media (min-width: 700px){
+   #new-post{
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      padding-left: 5rem;
+      padding-right: 5rem;
+   }
+
+   #new-post .post-form{
+      flex: 1;
+      justify-content: center;
+   }
+
+   #new-post .input-style{
+      width: 15rem;
+      padding: 0.7rem;
+      font-size: 1.1rem;
+   }
+
+   .post{
+      width: 20rem;
+   }
+}
+@media (min-width: 1500px){
+   #new-post{
+      padding-left: 25rem;
+      padding-right: 25rem;
+   }
 }
